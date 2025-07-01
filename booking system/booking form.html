@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Book Here</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Roboto;
+            color:#464951;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        }
+        .image img{
+            width:700px;
+            height:650px;
+        }
+        .form{
+            line-height: 1px;
+            margin-left:100px;
+            margin-top:100px;
+            height:550px;
+            width:350px;
+            border:1px solid transparent;
+            padding-left:30px;
+            border-radius:7px;
+            box-shadow:0px 10px 5px 10px  rgb(224, 219, 219);
+        }
+        .form img{
+            width:150px;
+        }
+        .form h1{
+            font-size:26px;
+            font-weight:400;
+            margin-bottom:50px;
+        }
+        .form button{
+           height:35px;
+           width:80px;
+           margin-top:25px;
+           font-size:15px;
+           color:#fff;
+           background-color:#122e69;
+           border:1px solid #122e69;
+           border-radius:10px;
+        }
+        .form p{
+            margin-top:25px;
+            margin-bottom:10px;
+            font-size:15px;
+        }
+        #fname, #lname, #email, #number{
+            border-radius:5px;
+            border:2px solid gray;
+            padding-left:10px;
+            width:150px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="image">
+            <img src="Image_fx.jpg">
+        </div>
+
+        <div class="form">
+        <form>
+
+            <img src="icons/cybernalytix_LOGO.jpg">
+            <h1>Input Your Details</h1>
+            <div class="details">
+            <p for-="fname">First Name:</p>
+            <input type="text" id="fname" placeholder="e.g John" required>
+            <p>Last Name:</p>
+            <input type="text" id="lname" placeholder="e.g Doe" required>
+            <p>Email:</p>
+            <input type="email" id="email" placeholder="e.g johndoe123@gmail.com" required>
+            <p>Phone Number:</p>
+            <input type="number" id="number" placeholder="e.g 08012345678" minlength="13" required>
+            <div>
+            <button>Next</button></div>
+        </div>
+        </form>
+    </div>
+    </div>
+</header>
+</body>
+</html>
