@@ -68,7 +68,6 @@ nav {
 
 /* AMENITIES */
 .amenities {
-  max-width:;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 50px;
@@ -257,7 +256,7 @@ h1 {
 }
 .daily button,
 .monthly button {
-  width: 70%;
+  padding: 10px 25px;
   min-width: 110px;
   max-width: 180px;
   height: 42px;
@@ -295,7 +294,7 @@ h1 {
   padding-left: 18px;
 }
 .weekly button {
-  width: 75%;
+  padding: 10px 15px;
   min-width: 110px;
   max-width: 200px;
   height: 48px;
@@ -349,8 +348,9 @@ footer p {
   .daily,
   .weekly,
   .monthly {
-    min-width: 180px;
-    max-width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 40vw;
     padding: 3vw 2vw 2vw 2vw;
   }
 
@@ -378,8 +378,9 @@ footer p {
   .daily,
   .weekly,
   .monthly {
-    min-width: 0;
-    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 60vw;
     padding: 4vw 2vw 2vw 2vw;
   }
 }
