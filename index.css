@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0; 
+  padding:0;
+  font-family:Roboto,sans-serif;
+  background-color: #fdfbfb;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 50px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.navbar img{
+  width:200px;
+  height:auto;
+}
+.navbar-links{
+  display:flex;
+  gap:40px;
+  list-style: none;
+  font-size:18px;
+  font-weight:600;
+}
+.navbar-links a{
+  text-decoration:none;
+  color: #000;
+  transition: all ease 0.3s;
+}
+.certificate-form{
+  height:430px;
+  width: 50%;
+  border:solid 1px transparent;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  margin: 100px;
+  padding:20px;
+  line-height:1.5;
+  box-shadow: 0 15px 50px #807f7f;
+  background-color: #fff;
+}
+.certificate-form h1{
+  margin:0;
+  padding:0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.certificate-form p{
+  margin:0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+} 
+.certificate-form label{
+  font-size: 18px;
+  font-weight: 400;
+}
+.certificate-form input{
+  padding:10px;
+  margin:8px 0;
+  border:solid 1px #b6b2b2;
+  font-size:13px;
+}
+.certificate-form button{
+  padding: 10px 20px;
+  width:200px;
+  margin:10px 0;
+  border: solid 1px transparent;
+  border-radius:3px;
+  background-color: #2D4A8A;
+  color:#fff;
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .navbar-links{
+    gap: 20px;
+    font-size:16px;    /* ...existing code... */
+    
+    @media (max-width: 500px) {
+      .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 10px;
+        align-items: flex-start;
+      }
+      .navbar img {
+        width: 140px;
+        margin-bottom: 10px;
+      }
+      .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        font-size: 13px;
+        align-items: flex-start;
+      }
+      .certificate-form {
+        width: 95%;
+        margin: 100px 2.5% 20px 2.5%;
+        padding: 10px;
+        min-width: unset;
+        box-shadow: 0 5px 20px #bbb;
+      }
+      .certificate-form h1 {
+        font-size: 18px;
+      }
+      .certificate-form p,
+      .certificate-form label {
+        font-size: 14px;
+      }
+      .certificate-form input,
+      .certificate-form button {
+        font-size: 12px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+@media (max-width:700px) {
+  .navbar-links{
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .certificate-form{
+    width: 50%;
+    height:430px ;
+  }
+  .certificate-form h1{
+    font-size: 20px;
+  }
+  .certificate-form p{
+    font-size: 16px;
+  }
+  .certificate-form label{
+    font-size: 16px;
+  }
+  .certificate-form input{
+    font-size: 12px;
+  }
+  .certificate-form button{
+    font-size: 14px;
+    width: 180px;
+  }
+}
